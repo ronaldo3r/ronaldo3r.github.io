@@ -31,12 +31,12 @@ $(document).ready(function () {
                     skill1 = 'Bootstrap: 90%';
                     break;
                 case 'wireframes':
-                    title = 'Wireframes and Prototypes'
+                    title = 'Prototipos y Wireframes'
                     skill1 = 'Photoshop: 80%';
                     skill2 = 'Adobe XD: 70%';
                     break;
                 case 'platforms':
-                    title = 'Plataforms'
+                    title = 'Plataformas'
                     skill1 = 'Wordpress: 80%';
                     break;
                 case 'vector':
@@ -45,13 +45,13 @@ $(document).ready(function () {
                     skill2 = 'Gravity Design: 60%';
                     break;
                 case 'auto':
-                    title = 'Automation tools'
+                    title = 'Herrramientas de automatización'
                     skill1 = 'Jenkins: 90%';
                     break;
                 case 'others':
-                    title = 'Others'
+                    title = 'Otros'
                     skill1 = 'Git';
-                    skill2 = 'Agile methodologies';
+                    skill2 = 'Metodologías ágiles';
                     skill3 = 'VSCode';
                     skill4 = 'Full-Stack';
                     break;
