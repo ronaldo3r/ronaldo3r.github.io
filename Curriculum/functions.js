@@ -1,82 +1,105 @@
-$(document).ready(function(){
-    
+$(document).ready(function () {
+
     document.querySelectorAll('.skills').forEach(skills => {
-        skills.addEventListener('click', function() {
+        skills.addEventListener('click', function () {
 
             let skill_type = this.getAttribute('skill-type')
             let title = '';
-            let content = '';
+            let skill1 = '';
+            let skill2 = '';
+            let skill3 = '';
+            let skill4 = '';
+            let skill5 = '';
 
             switch (skill_type) {
                 case 'frontend':
                     title = 'Front-end'
-                    content = 'HTML5, CSS, SASS, JS/ES6, jQuery, Vuejs, Typescript, Angular, React, FullCalendar, AdminLTE'
+                    skill1 = 'HTML5: 80%';
+                    skill2 = 'CSS: 80%';
+                    skill3 = 'JS/ES6: 70%';
+                    skill4 = 'Vuejs: 60%';
+                    skill5 = 'React: 60%';
                     break;
                 case 'backend':
                     title = 'Back-end'
-                    content = 'Nodejs, C#, PHP, Django, Meteor, Express, Sails, Adonis, Java Spring, Go, Laravel'
+                    skill1 = 'Java Spring: 90%';
+                    skill2 = 'C#: 80%';
+                    skill3 = 'Nodejs: 60%';
                     break;
                 case 'frameworks':
                     title = 'Frameworks'
-                    content = 'Bootstrap, foundation, Material Design Lite, Bulma CSS, Semantic UI, BootFlat, FlatUI'
+                    skill1 = 'Bootstrap: 90%';
                     break;
                 case 'wireframes':
                     title = 'Wireframes and Prototypes'
-                    content = 'Axure, Adobe XD, Sketch, Photoshop, Gravity Design, Krita, Gimp'
+                    skill1 = 'Photoshop: 80%';
+                    skill2 = 'Adobe XD: 70%';
                     break;
                 case 'platforms':
                     title = 'Plataforms'
-                    content = 'Wordpress, OpenCart, Drupal, Komercia, Joomla, Shopify, WooComerce, Magento, PrestaShop'
+                    skill1 = 'Wordpress: 80%';
                     break;
                 case 'vector':
                     title = 'Vector (icons)'
-                    content = 'Inkscape, Illustrator, Gravity Design, Krita'
+                    skill1 = 'Illustrator: 80%';
+                    skill2 = 'Gravity Design: 60%';
                     break;
                 case 'auto':
                     title = 'Automation tools'
-                    content = 'Gulp, Grunt, Jenkins, Chef, Memcached'
+                    skill1 = 'Jenkins: 90%';
                     break;
                 case 'others':
                     title = 'Others'
-                    content = 'Git, Hotjar, Resposive Design (mobile-fisrt), basic SEO, Agile methodologies, Vagrant, VSCode, Full-Stack, Chef'
+                    skill1 = 'Git';
+                    skill2 = 'Agile methodologies';
+                    skill3 = 'VSCode';
+                    skill4 = 'Full-Stack';
                     break;
                 default:
                     title = ''
-                    content = ''
+                    skill1 = '';
+                    skill2 = '';
+                    skill3 = '';
+                    skill4 = '';
+                    skill5 = '';
                     break;
             }
-            
-            document.getElementById('modal-title').innerHTML = title
-            document.getElementById('modal-content').innerHTML = content
+
+            document.getElementById('title').innerHTML = title
+            document.getElementById('skill1').innerHTML = skill1
+            document.getElementById('skill2').innerHTML = skill2
+            document.getElementById('skill3').innerHTML = skill3
+            document.getElementById('skill4').innerHTML = skill4
+            document.getElementById('skill5').innerHTML = skill5
 
             let altura = 250
-            let anchura = 500 
+            let anchura = 500
 
-            let y = parseInt( ($(document).height()/2) - (altura/2));
-            let x = parseInt( ($(document).width()/2) - (anchura/2));
+            let y = parseInt(($(document).height() / 2) - (altura / 2));
+            let x = parseInt(($(document).width() / 2) - (anchura / 2));
 
-            $('#popup').css('top',y)
-            $('#popup').css('left',x)
+            $('#popup').css('top', y)
+            $('#popup').css('left', x)
 
-            $('body').css({'overflow':'hidden'});
-            $(document).bind('scroll',function () { 
-                window.scrollTo(0,0); 
+            $('body').css({ 'overflow': 'hidden' });
+            $(document).bind('scroll', function () {
+                window.scrollTo(0, 0);
             });
 
             $('#popup').fadeIn('slow');
             $('.popup-overlay').fadeIn('slow');
             $('.popup-overlay').height($(document).height());
-            $('.popup-overlay').width($(document).width());        
-            
+            $('.popup-overlay').width($(document).width());
+
         })
     })
 
-    $('#close').on('click', function(){
+    $('#close').on('click', function () {
         $('#popup').fadeOut('slow');
         $('.popup-overlay').fadeOut('slow');
 
         $(document).unbind('scroll');
-        $('body').css({'overflow':'visible'});
+        $('body').css({ 'overflow': 'visible' });
         return false;
     });
 });
