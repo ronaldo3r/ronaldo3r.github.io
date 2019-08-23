@@ -1,0 +1,131 @@
+*{
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+}
+.bg-dark {
+    background-color:#3BA1D5!important;
+}
+
+.navbar-brand{
+    margin-right: 120px;
+}
+
+.text-black{
+    color: black;
+}
+
+.menu-icon{
+    margin-right: 5px;
+}
+
+#menu.container-fluid {
+    color: white;
+    margin: auto;
+    width: 50%;
+    font-size: 11px;
+}
+
+.container-fluid{
+    padding:0 0 0 0; 
+}
+
+b{
+    color: white;
+}
+
+#welcome.container-fluid{
+    text-align: left;
+    padding: 20px 10px 20px 10px; 
+}
+
+.img-welcome{
+    width: 300px;
+    height: 300px;
+}
+
+#home.container-fluid{
+    text-align: left;
+    background-image: url(https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    padding: 20px 10px 20px 10px;
+
+}
+
+.img-home{
+    width: 400px;
+    height: 350px;
+}
+
+#experience.container{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.img-experience{
+    width: 300px;
+    height: 200px;
+}
+
+#programming-skills.container-fluid{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-image: url(https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    padding: 20px 20px 20px 20px;
+}
+#about-me.container-fluid{
+    padding: 100px 20px 70px 20px;
+    background-image: url(https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    height: 650px;
+
+}
+
+.center-ver{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-small{
+    font-size: 10px;
+}
+
+.text-small2{
+    font-size: 13px;
+}
+
+
+.button{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: transparent;
+    border-color: black;
+    border-style: solid;
+    font-size: 13px;
+    text-align: center;
+    width: 60%;
+}
+
+hr{
+    border-color: gray;
+}
+
+.margin-top-experience{
+    margin-bottom: 30px;
+}
+
+.progress{
+    background-color: white;
+}
+
+.padding-about{
+    padding: 10px 10px 10px 10px;
+}
+
+
